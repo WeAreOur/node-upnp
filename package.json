@@ -1,0 +1,25 @@
+{
+  "name": "node-upnp",
+  "version": "1.0.0",
+  "description": "An async/await implementation of the Universal Plug and Play protocol for NodeJS",
+  "main": "src/index.js",
+  "scripts": {
+    "mkmap": "node ./scripts/node-upnp.js map",
+    "rmmap": "node ./scripts/node-upnp.js rm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "node-upnp": "./scripts/node-upnp.js"
+  },
+  "author": "Cesar Costas",
+  "license": "The Unlicense",
+  "dependencies": {
+    "@homelify/node-ssdp": "github:homelify/node-ssdp",
+    "fast-xml-parser": "^3.17.6",
+    "ip": "github:indutny/node-ip",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "listr": "^0.14.3"
+  }
+}
